@@ -4,53 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taquería Don Memo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
 
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f2f2f2;
+      background: linear-gradient(145deg, #f8f8f8, #ececec);
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      padding: 20px;
+      padding: 30px 15px;
     }
 
     .card {
-      background-color: #fff;
+      background: #fff;
       border-radius: 16px;
-      padding: 30px 25px;
-      max-width: 420px;
+      padding: 32px 24px;
+      max-width: 450px;
       width: 100%;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
     }
 
     .logo {
-      font-size: 24px;
-      font-weight: 600;
+      font-size: 26px;
+      font-weight: 700;
       color: #e74c3c;
-      margin-bottom: 12px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo span {
+      font-size: 30px;
+      margin-right: 10px;
     }
 
     .tagline {
       font-size: 16px;
       color: #555;
+      text-align: center;
       margin-bottom: 20px;
     }
 
     .button {
       display: block;
       width: 100%;
-      text-align: center;
-      padding: 12px;
       background-color: #25D366;
-      color: white;
+      color: #fff;
+      padding: 14px;
+      text-align: center;
       text-decoration: none;
       font-size: 18px;
       font-weight: 600;
@@ -60,7 +70,7 @@
     }
 
     .button:hover {
-      background-color: #1ebe5d;
+      background-color: #1eba5d;
     }
 
     .map {
@@ -68,41 +78,58 @@
       text-align: center;
       color: #3498db;
       text-decoration: none;
-      margin-top: 12px;
+      margin-top: 14px;
       font-size: 15px;
     }
 
     .menu {
-      margin-top: 30px;
+      margin-top: 32px;
     }
 
     .menu h2 {
       font-size: 20px;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
+      text-align: left;
       border-bottom: 2px solid #e74c3c;
       padding-bottom: 4px;
-      color: #333;
+      color: #222;
     }
 
     .menu-item {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 10px;
       font-size: 16px;
-      color: #444;
+      color: #333;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
     }
 
     .footer {
-      margin-top: 30px;
+      margin-top: 32px;
       font-size: 14px;
-      color: #999;
+      color: #aaa;
       text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 24px 18px;
+      }
+
+      .logo {
+        font-size: 22px;
+      }
+
+      .button {
+        font-size: 16px;
+        padding: 12px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="logo">🌮 Taquería Don Memo</div>
+    <div class="logo"><span>🌮</span> Taquería Don Memo</div>
     <div class="tagline">Los mejores tacos del barrio, ahora en línea</div>
 
     <a class="button" href="https://wa.me/5215555555555" target="_blank">Ordena por WhatsApp</a>
@@ -134,5 +161,6 @@
   </div>
 </body>
 </html>
+
 
 
